@@ -27,7 +27,8 @@ public class CreateUserValidator : AbstractValidator<CreateUserViewModel>
 
         RuleFor(user => user.BirthDate)
             .NotNull()
-            .NotEmpty();
+            .NotEmpty()
+            .AgeBetween(100, 18).WithMessage("deve ter entre 18 e 100 anos");
 
         RuleFor(user => user.PhoneNumber)
             .NotNull()
