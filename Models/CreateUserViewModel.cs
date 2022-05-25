@@ -1,4 +1,5 @@
 using System.ComponentModel.DataAnnotations;
+using TWValidacao.Attributes;
 
 namespace TWValidacao.Models;
 
@@ -18,6 +19,7 @@ public class CreateUserViewModel
     public string Email { get; set; } = string.Empty;
 
     [Required(ErrorMessage = "é obrigatorio")]
+    [AgeBetween(100, 18, ErrorMessage = "deve ter entre 18 e 100 anos")]
     public DateTime BirthDate { get; set; }
 
     [Required(ErrorMessage = "é obrigatorio")]
