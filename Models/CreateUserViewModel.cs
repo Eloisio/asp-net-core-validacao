@@ -3,7 +3,7 @@ using TWValidacao.Attributes;
 
 namespace TWValidacao.Models;
 
-public class CreateUserViewModel
+public class CreateUserViewModel : IValidatableObject
 {
     [Required(ErrorMessage = "é obrigatorio")]
     [StringLength(100, MinimumLength = 3, ErrorMessage = "deve ter entre 3 e 100 caracteres")]
@@ -19,7 +19,7 @@ public class CreateUserViewModel
     public string Email { get; set; } = string.Empty;
 
     [Required(ErrorMessage = "é obrigatorio")]
-    [AgeBetween(100, 18, ErrorMessage = "deve ter entre 18 e 100 anos")]
+    // [AgeBetween(100, 18, ErrorMessage = "deve ter entre 18 e 100 anos")]
     public DateTime BirthDate { get; set; }
 
     [Required(ErrorMessage = "é obrigatorio")]
@@ -39,4 +39,27 @@ public class CreateUserViewModel
     [StringLength(255, MinimumLength = 5, ErrorMessage = "deve ter entre 5 e 255 caracteres")]
     [Compare(nameof(Password), ErrorMessage = "senhas não conferem")]
     public string PasswordConfirmation { get; set; } = string.Empty;
+
+    public IEnumerable<ValidationResult> Validate(ValidationContext validationContext)
+    {
+        var age = calculateAge(BirthDate);
+        if (age < 18 || age > 100)
+        {
+            yield return new ValidationResult(
+                "deve ter entre 18 e 100 anos",
+                new[] { nameof(BirthDate) }
+            );
+        }
+    }
+
+    private int calculateAge(DateTime birthDate)
+    {
+        var today = DateTime.Today;
+        var age = today.Year - birthDate.Year;
+        if (birthDate.Date > today.AddYears(-age))
+        {
+            age--;
+        }
+        return age;
+    }
 }
