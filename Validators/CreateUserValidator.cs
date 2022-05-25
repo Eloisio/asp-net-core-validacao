@@ -8,9 +8,9 @@ public class CreateUserValidator : AbstractValidator<CreateUserViewModel>
     public CreateUserValidator()
     {
         RuleFor(user => user.FirstName)
-            .NotNull()
+            .NotNull().WithMessage("é um campo obrigatorio")
             .NotEmpty()
-            .MinimumLength(3)
+            .MinimumLength(3).WithMessage("deve ter pelo menos 3 caracteres")
             .MaximumLength(100);
 
         RuleFor(user => user.LastName)

@@ -1,7 +1,18 @@
+using FluentValidation;
+using FluentValidation.AspNetCore;
+using TWValidacao.Models;
+using TWValidacao.Validators;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddFluentValidation(fv =>
+{
+    fv.DisableDataAnnotationsValidation = true;
+});
+
+builder.Services.AddTransient<IValidator<CreateUserViewModel>, CreateUserValidator>();
 
 var app = builder.Build();
 

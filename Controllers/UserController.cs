@@ -1,5 +1,7 @@
+using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Mvc;
 using TWValidacao.Models;
+using TWValidacao.Validators;
 
 namespace TWValidacao.Controllers;
 
