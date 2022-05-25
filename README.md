@@ -1,0 +1,15 @@
+# TreinaWeb: Direto ao Ponto "ASP.NET Core - Validação de dados"
+
+## Lista de Commits
+
+| Aula    | Video                                                                | Commit                                                            | Link                                                                                                                           |
+| ------- | -------------------------------------------------------------------- | ----------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
+| Aula 02 | Vídeo 02 - Criando o projeto                                         | 02:02 - criando o projeto                                         | [Download](https://github.com/treinaweb/treinaweb-asp-net-core-validacao/archive/2405a4a4ecec361911cd051e68082d7e6ab1316b.zip) |
+| Aula 02 | Vídeo 03 - Definindo as validações com ValidationAttribute           | 02:03 - definindo as validações com ValidationAttribute           | [Download](https://github.com/treinaweb/treinaweb-asp-net-core-validacao/archive/020f6acb85b6ddb101bdfb5c41e43fbb0c9627a9.zip) |
+| Aula 02 | Vídeo 04 - Retornando erros para o usuário com o ModelState          | 02:04 - retornando erros para o usuário com o ModelState          | [Download](https://github.com/treinaweb/treinaweb-asp-net-core-validacao/archive/3669abefc69dca1c0764d00fa8903fa33c95f95f.zip) |
+| Aula 02 | Vídeo 05 - Criando validações customizadas com ValidationAttribute   | 02:05 - criando validações customizadas com ValidationAttribute   | [Download](https://github.com/treinaweb/treinaweb-asp-net-core-validacao/archive/56f1609da77c9add70ac4ebba80d0f9d574768f5.zip) |
+| Aula 02 | Vídeo 06 - Criando validações customizadas com IValidatableObject    | 02:06 - criando validações customizadas com IValidatableObject    | [Download](https://github.com/treinaweb/treinaweb-asp-net-core-validacao/archive/f9391f56333957866a82925a5d45effda1a34614.zip) |
+| Aula 03 | Vídeo 07 - Preparando a aplicação para usar o FluentValidation       | 03:07 - preparando a aplicação para usar o FluentValidation       | [Download](https://github.com/treinaweb/treinaweb-asp-net-core-validacao/archive/2c85131a022623b13b067943573e0c74e724405c.zip) |
+| Aula 03 | Vídeo 08 - Instalando o FluentValidation e criando nossas validações | 03:08 - instalando o FluentValidation e criando nossas validações | [Download](https://github.com/treinaweb/treinaweb-asp-net-core-validacao/archive/cf1d488cc69c156fab3a9a9d3d9f55479c0ab0a2.zip) |
+| Aula 03 | Vídeo 09 - Exibindo os erros de validação na view                    | 03:09 - exibindo os erros de validação na view                    | [Download](https://github.com/treinaweb/treinaweb-asp-net-core-validacao/archive/377f214f08609d12ad0cb8e11a806819275468de.zip) |
+| Aula 03 | Vídeo 10 - Criando validações customizadas com o FluentValidation    | 03:10 - criando validações customizadas com o FluentValidation    | [Download](https://github.com/treinaweb/treinaweb-asp-net-core-validacao/archive/1b86304f2555278e6470ab2478a6a6b81b8b115c.zip) |
