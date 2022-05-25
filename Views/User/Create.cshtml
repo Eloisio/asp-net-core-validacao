@@ -11,10 +11,12 @@
         <div class="col-md-6">
             <label asp-for="FirstName">Nome</label>
             <input asp-for="FirstName" type="text" class="form-control">
+            <span asp-validation-for="FirstName" class="text-danger"></span>
         </div>
         <div class="col-md-6">
             <label asp-for="LastName">Sobrenome</label>
             <input asp-for="LastName" type="text" class="form-control">
+            <span asp-validation-for="LastName" class="text-danger"></span>
         </div>
     </div>
 
@@ -22,10 +24,12 @@
         <div class="col-md-6">
             <label asp-for="Email">E-mail</label>
             <input asp-for="Email" type="email" class="form-control">
+            <span asp-validation-for="Email" class="text-danger"></span>
         </div>
         <div class="col-md-6">
             <label asp-for="BirthDate">Data de nascimento</label>
             <input asp-for="BirthDate" type="date" class="form-control">
+            <span asp-validation-for="BirthDate" class="text-danger"></span>
         </div>
     </div>
 
@@ -33,10 +37,12 @@
         <div class="col-md-6">
             <label asp-for="PhoneNumber">Telefone</label>
             <input asp-for="PhoneNumber" type="text" class="form-control">
+            <span asp-validation-for="PhoneNumber" class="text-danger"></span>
         </div>
         <div class="col-md-6">
             <label asp-for="ProfilePicture">Foto de perfil</label>
             <input asp-for="ProfilePicture" type="url" class="form-control">
+            <span asp-validation-for="ProfilePicture" class="text-danger"></span>
         </div>
     </div>
 
@@ -44,10 +50,12 @@
         <div class="col-md-6">
             <label asp-for="Password">Senha</label>
             <input asp-for="Password" type="password" class="form-control">
+            <span asp-validation-for="Password" class="text-danger"></span>
         </div>
         <div class="col-md-6">
             <label asp-for="PasswordConfirmation">Confirmação de senha</label>
             <input asp-for="PasswordConfirmation" type="password" class="form-control">
+            <span asp-validation-for="PasswordConfirmation" class="text-danger"></span>
         </div>
     </div>
 

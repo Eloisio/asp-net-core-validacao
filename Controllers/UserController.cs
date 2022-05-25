@@ -15,9 +15,13 @@ public class UserController : Controller
     [HttpPost]
     public IActionResult Create(CreateUserViewModel formData)
     {
-        Console.WriteLine(formData.FirstName);
-        Console.WriteLine(formData.LastName);
-        Console.WriteLine(formData.Email);
+        if (!ModelState.IsValid)
+        {
+            Console.WriteLine("Houveram erros de validação");
+            ViewData["Title"] = "Cadastro de Usuário";
+            return View();
+        }
+        Console.WriteLine("Não houveram erros de validação");
         return RedirectToAction();
     }
 
